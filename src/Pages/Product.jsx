@@ -27,7 +27,7 @@ const Product = () => {
   const getProduct=async()=>{
     try {
     
-    const response= await axios.get(`http://localhost:3000/api/product/${id}`)
+    const response= await axios.get(`https://rayvent.onrender.com/api/product/${id}`)
     // console.log(response)
     if(response.status===200){
       setproduct(response.data.data)

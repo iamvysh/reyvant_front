@@ -26,7 +26,7 @@ const Landing = () => {
    const dispatch=useDispatch()
    const product=useSelector((state)=>state.product.products)
   const getAllProducts=async()=>{
-    const products= await axios.get("http://localhost:3000/api/getproduct")
+    const products= await axios.get("https://rayvent.onrender.com/api/getproduct")
     dispatch( AllProducts(products.data.data));
   }
     useEffect(()=>{
